@@ -1,7 +1,9 @@
-﻿namespace BlogSystem.Web
+namespace BlogSystem.Web
 {
+    using System;
     using System.Reflection;
 
+    using BlogSystem.Data;
     using BlogSystem.Data;
     using BlogSystem.Data.Common;
     using BlogSystem.Data.Common.Repositories;
@@ -12,9 +14,9 @@
     using BlogSystem.Services.Mapping;
     using BlogSystem.Services.Messaging;
     using BlogSystem.Web.ViewModels;
-
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
