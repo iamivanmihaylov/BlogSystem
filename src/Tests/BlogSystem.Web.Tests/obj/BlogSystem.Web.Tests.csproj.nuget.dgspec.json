@@ -1,0 +1,1133 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Tests\\BlogSystem.Web.Tests\\BlogSystem.Web.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj",
+        "projectName": "BlogSystem.Common",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj",
+        "projectName": "BlogSystem.Data.Common",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj",
+        "projectName": "BlogSystem.Data.Models",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\BlogSystem.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\BlogSystem.Data.csproj",
+        "projectName": "BlogSystem.Data",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\BlogSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\BlogSystem.Services.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\BlogSystem.Services.Data.csproj",
+        "projectName": "BlogSystem.Services.Data",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\BlogSystem.Services.Data.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Common\\BlogSystem.Data.Common.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj",
+        "projectName": "BlogSystem.Services.Mapping",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\BlogSystem.Services.Messaging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\BlogSystem.Services.Messaging.csproj",
+        "projectName": "BlogSystem.Services.Messaging",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\BlogSystem.Services.Messaging.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Sendgrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\BlogSystem.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\BlogSystem.Services.csproj",
+        "projectName": "BlogSystem.Services",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\BlogSystem.Services.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Tests\\BlogSystem.Web.Tests\\BlogSystem.Web.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Tests\\BlogSystem.Web.Tests\\BlogSystem.Web.Tests.csproj",
+        "projectName": "BlogSystem.Web.Tests",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Tests\\BlogSystem.Web.Tests\\BlogSystem.Web.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Tests\\BlogSystem.Web.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\BlogSystem.Web.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\BlogSystem.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\BlogSystem.Web.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\BlogSystem.Web.Infrastructure.csproj",
+        "projectName": "BlogSystem.Web.Infrastructure",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\BlogSystem.Web.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\BlogSystem.Web.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\BlogSystem.Web.ViewModels.csproj",
+        "projectName": "BlogSystem.Web.ViewModels",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\BlogSystem.Web.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\BlogSystem.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\BlogSystem.Web.csproj",
+        "projectName": "BlogSystem.Web",
+        "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\BlogSystem.Web.csproj",
+        "packagesPath": "C:\\Users\\Ivan Mihaylov\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ivan Mihaylov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\BlogSystem.Common\\BlogSystem.Common.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data.Models\\BlogSystem.Data.Models.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\BlogSystem.Data.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Data\\BlogSystem.Data\\BlogSystem.Data.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\BlogSystem.Services.Data.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Data\\BlogSystem.Services.Data.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Mapping\\BlogSystem.Services.Mapping.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\BlogSystem.Services.Messaging.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services.Messaging\\BlogSystem.Services.Messaging.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\BlogSystem.Services.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Services\\BlogSystem.Services\\BlogSystem.Services.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\BlogSystem.Web.Infrastructure.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.Infrastructure\\BlogSystem.Web.Infrastructure.csproj"
+              },
+              "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\BlogSystem.Web.ViewModels.csproj": {
+                "projectPath": "D:\\Programming\\Github-Repositories\\BlogSystem\\src\\Web\\BlogSystem.Web.ViewModels\\BlogSystem.Web.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.1.175, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\bin\Debug\net7.0\BlogSystem.Services.Messaging.deps.json
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\bin\Debug\net7.0\BlogSystem.Services.Messaging.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\bin\Debug\net7.0\BlogSystem.Services.Messaging.pdb
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.csproj.AssemblyReference.cache
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.AssemblyInfoInputs.cache
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.AssemblyInfo.cs
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.csproj.CoreCompileInputs.cache
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.sourcelink.json
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\refint\BlogSystem.Services.Messaging.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\BlogSystem.Services.Messaging.pdb
+D:\Programming\Github-Repositories\BlogSystem\src\Services\BlogSystem.Services.Messaging\obj\Debug\net7.0\ref\BlogSystem.Services.Messaging.dll

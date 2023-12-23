@@ -1,0 +1,12 @@
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\bin\Debug\net7.0\BlogSystem.Data.Common.deps.json
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\bin\Debug\net7.0\BlogSystem.Data.Common.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\bin\Debug\net7.0\BlogSystem.Data.Common.pdb
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.AssemblyInfoInputs.cache
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.AssemblyInfo.cs
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.csproj.CoreCompileInputs.cache
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.sourcelink.json
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\refint\BlogSystem.Data.Common.dll
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\BlogSystem.Data.Common.pdb
+D:\Programming\Github-Repositories\BlogSystem\src\Data\BlogSystem.Data.Common\obj\Debug\net7.0\ref\BlogSystem.Data.Common.dll
