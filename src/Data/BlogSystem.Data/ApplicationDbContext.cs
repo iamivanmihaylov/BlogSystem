@@ -34,6 +34,10 @@
 
         public DbSet<BlogPostReaction> BlogPostReactions { get; set; }
 
+        public DbSet<Project> Projects { get; set; }
+
+        public DbSet<Subscribtion> Subscribtions { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
