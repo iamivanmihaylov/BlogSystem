@@ -27,7 +27,7 @@
     <div>
         @Html.Raw(blogPost.SanitizedContent)
     </div>
-    <div>Number of votes: @(blogPost.BlogPostReactionsCount)</div>
+    <div id="likes_@blogPost.Id">Number of votes: @(blogPost.BlogPostReactionsCount)</div>
     <div>
         <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Like))">Like</button>
         <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Love))">Love</button>
@@ -41,8 +41,6 @@
 @section Scripts {
 
     <script>
-        alert("Working!")
-
         function sendReaction(blogPostId, reactionType) {
             var token = $("#reactForm input[name=__RequestVerificationToken]").val();
 
@@ -59,7 +57,7 @@
                 dataType: "json",
                 headers: { 'X-CSRF-TOKEN': token },
                 success: function (data) {
-                    console.log(data)
+                    $(`#likes_${data.blogPostId}`).html(`Number of votes: ${data.reactionCount}`)
                 }
             });
         }

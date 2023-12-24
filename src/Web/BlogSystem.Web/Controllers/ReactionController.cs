@@ -27,7 +27,8 @@
             var isSessionFound = this.Request.Cookies.TryGetValue("Session", out var session);
             if (!isSessionFound)
             {
-                this.Response.Cookies.Append("Session", Guid.NewGuid().ToString(), new CookieOptions
+                session = Guid.NewGuid().ToString();
+                this.Response.Cookies.Append("Session", session, new CookieOptions
                 {
                     Expires = DateTimeOffset.UtcNow.AddDays(30),
                     Path = "/",
