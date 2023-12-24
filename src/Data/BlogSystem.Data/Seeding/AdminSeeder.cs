@@ -22,6 +22,7 @@
             {
                 var adminUser = new ApplicationUser
                 {
+                    Id = "cdfc2091-dd65-46f2-a92d-1b32746e1f89",
                     Email = "ivan4o03.it@gmail.com",
                     PhoneNumber = "0885222962",
                     UserName = "ivan4o03",
