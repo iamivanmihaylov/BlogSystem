@@ -28,8 +28,6 @@
 
         public DbSet<BlogPost> BlogPosts { get; set; }
 
-        public DbSet<BlogPostImage> BlogPostImages { get; set; }
-
         public DbSet<BlogPostTag> BlogPostTags { get; set; }
 
         public DbSet<BlogPostReaction> BlogPostReactions { get; set; }

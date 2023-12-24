@@ -8,6 +8,8 @@ namespace BlogSystem.Data.Models
 
         public int BlogPostId { get; set; }
 
+        public string Session { get; set; }
+
         public ReactionType ReactionType { get; set; }
     }
 }

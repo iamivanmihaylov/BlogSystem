@@ -1,4 +1,6 @@
-﻿@using BlogSystem.Common
+﻿@model BlogSystem.Web.ViewModels.ViewModels.Home.HomeViewModel
+@using BlogSystem.Common
+@using BlogSystem.Data.Models
 @{
     this.ViewData["Title"] = "Home Page";
 }
@@ -7,3 +9,59 @@
     <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<form id="reactForm" method="post"></form>
+
+@foreach (var blogPost in Model.BlogPosts)
+{
+    <div>
+        @blogPost.Title
+    </div>
+    <img src="@blogPost.HeadingImageUrl" />
+    <div>
+        @foreach (var tag in blogPost.BlogPostTags)
+        {
+            <div>@tag</div>
+        }
+    </div>
+    <div>
+        @Html.Raw(blogPost.SanitizedContent)
+    </div>
+    <div>Number of votes: @(blogPost.BlogPostReactionsCount)</div>
+    <div>
+        <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Like))">Like</button>
+        <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Love))">Love</button>
+        <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Wow))">Wow</button>
+        <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Congrtulations))">Congrtulations</button>
+        <button onclick="sendReaction(@blogPost.Id, @((int)ReactionType.Angry))">Angry</button>
+
+    </div>
+}
+
+@section Scripts {
+
+    <script>
+        alert("Working!")
+
+        function sendReaction(blogPostId, reactionType) {
+            var token = $("#reactForm input[name=__RequestVerificationToken]").val();
+
+            let json = {
+                blogPostId,
+                reactionType
+            }
+
+            $.ajax({
+                url: "/api/reaction",
+                type: "POST",
+                data: JSON.stringify(json),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                headers: { 'X-CSRF-TOKEN': token },
+                success: function (data) {
+                    console.log(data)
+                }
+            });
+        }
+    </script>
+}

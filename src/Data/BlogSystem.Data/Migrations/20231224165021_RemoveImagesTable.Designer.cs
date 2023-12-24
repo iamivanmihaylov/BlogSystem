@@ -4,6 +4,7 @@ using BlogSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogSystem.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231224165021_RemoveImagesTable")]
+    partial class RemoveImagesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,21 +24,6 @@ namespace BlogSystem.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("BlogPostBlogPostTag", b =>
-                {
-                    b.Property<int>("BlogPostTagsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BlogPostsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("BlogPostTagsId", "BlogPostsId");
-
-                    b.HasIndex("BlogPostsId");
-
-                    b.ToTable("BlogPostBlogPostTag");
-                });
 
             modelBuilder.Entity("BlogSystem.Data.Models.ApplicationRole", b =>
                 {
@@ -245,9 +233,6 @@ namespace BlogSystem.Data.Migrations
                     b.Property<int>("ReactionType")
                         .HasColumnType("int");
 
-                    b.Property<string>("Session")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("BlogPostId");
@@ -265,6 +250,9 @@ namespace BlogSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BlogPostId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
@@ -281,6 +269,8 @@ namespace BlogSystem.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BlogPostId");
 
                     b.HasIndex("IsDeleted");
 
@@ -500,21 +490,6 @@ namespace BlogSystem.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("BlogPostBlogPostTag", b =>
-                {
-                    b.HasOne("BlogSystem.Data.Models.BlogPostTag", null)
-                        .WithMany()
-                        .HasForeignKey("BlogPostTagsId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("BlogSystem.Data.Models.BlogPost", null)
-                        .WithMany()
-                        .HasForeignKey("BlogPostsId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("BlogSystem.Data.Models.BlogPost", b =>
                 {
                     b.HasOne("BlogSystem.Data.Models.ApplicationUser", "User")
@@ -528,6 +503,17 @@ namespace BlogSystem.Data.Migrations
                 {
                     b.HasOne("BlogSystem.Data.Models.BlogPost", "BlogPost")
                         .WithMany("BlogPostReactions")
+                        .HasForeignKey("BlogPostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("BlogPost");
+                });
+
+            modelBuilder.Entity("BlogSystem.Data.Models.BlogPostTag", b =>
+                {
+                    b.HasOne("BlogSystem.Data.Models.BlogPost", "BlogPost")
+                        .WithMany("BlogPostTags")
                         .HasForeignKey("BlogPostId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -611,6 +597,8 @@ namespace BlogSystem.Data.Migrations
             modelBuilder.Entity("BlogSystem.Data.Models.BlogPost", b =>
                 {
                     b.Navigation("BlogPostReactions");
+
+                    b.Navigation("BlogPostTags");
                 });
 #pragma warning restore 612, 618
         }

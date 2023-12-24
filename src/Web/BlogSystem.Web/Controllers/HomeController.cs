@@ -1,16 +1,30 @@
 ﻿namespace BlogSystem.Web.Controllers
 {
     using System.Diagnostics;
-
+    using System.Threading.Tasks;
+    using BlogSystem.Services.Data.Contracts;
     using BlogSystem.Web.ViewModels;
-
+    using BlogSystem.Web.ViewModels.ViewModels.BlogPostVMs;
+    using BlogSystem.Web.ViewModels.ViewModels.Home;
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
     {
-        public IActionResult Index()
+        private readonly IBlogPostService blogPostService;
+
+        public HomeController(IBlogPostService blogPostService)
         {
-            return this.View();
+            this.blogPostService = blogPostService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var viewModel = new HomeViewModel
+            {
+                BlogPosts = await this.blogPostService.GetAllBlogPostsAsync<BlogPostHomeViewModel>(),
+            };
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()

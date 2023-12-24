@@ -1,0 +1,56 @@
+﻿@model BlogSystem.Web.ViewModels.InputModels.BlogPosts.BlogPostInputModel
+@{
+
+}
+
+<div asp-validation-summary="All"></div>
+
+<form asp-controller="BlogPost" asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Title">Title</label>
+        <input asp-for="Title" class="form-control"  placeholder="Title...">
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageUrl">ImageUrl</label>
+        <input asp-for="ImageUrl" class="form-control" placeholder="ImageUrl...">
+        <span asp-validation-for="ImageUrl"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Tags">Tags</label>
+        <input asp-for="Tags" class="form-control" placeholder="Tags...">
+        <span asp-validation-for="Tags"></span>
+    </div>
+
+    <div class="form-group mb-4 mt-4">
+        <textarea asp-for="Content" id="content"></textarea>
+        <span asp-validation-for="Content"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+@section Scripts {
+    <script src="https://cdn.tiny.cloud/1/k2it16s7bzj25cfsql89offbfj34nposle0ldukzoykk86zg/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: "#content",
+            plugins: [
+                'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+                'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+                'media', 'table', 'emoticons', 'template', 'help'
+            ],
+            toolbar: 'undo redo | styles | fontsize | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+                'forecolor backcolor emoticons | help',
+            toolbar_sticky: true,
+            branding: false,
+            height: 600
+        })
+    </script>
+}

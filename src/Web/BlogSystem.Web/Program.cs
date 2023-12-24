@@ -11,6 +11,7 @@ namespace BlogSystem.Web
     using BlogSystem.Data.Repositories;
     using BlogSystem.Data.Seeding;
     using BlogSystem.Services.Data;
+    using BlogSystem.Services.Data.Contracts;
     using BlogSystem.Services.Mapping;
     using BlogSystem.Services.Messaging;
     using BlogSystem.Web.ViewModels;
@@ -54,8 +55,13 @@ namespace BlogSystem.Web
                 {
                     options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                 }).AddRazorRuntimeCompilation();
+
             services.AddRazorPages();
             services.AddDatabaseDeveloperPageExceptionFilter();
+            services.AddAntiforgery(options =>
+            {
+                options.HeaderName = "X-CSRF-TOKEN";
+            });
 
             services.AddSingleton(configuration);
 
@@ -67,6 +73,8 @@ namespace BlogSystem.Web
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
+            services.AddTransient<IBlogPostService, BlogPostService>();
+            services.AddTransient<IReactionService, ReactionService>();
         }
 
         private static void Configure(WebApplication app)

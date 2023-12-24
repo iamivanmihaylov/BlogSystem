@@ -14,12 +14,11 @@
         {
             this.BlogPostReactions = new HashSet<BlogPostReaction>();
             this.BlogPostTags = new HashSet<BlogPostTag>();
-            this.BlogPostImages = new HashSet<BlogPostImage>();
         }
 
         public string Title { get; set; }
 
-        public string HeadingImage { get; set; }
+        public string HeadingImageUrl { get; set; }
 
         public string Content { get; set; }
 
@@ -31,6 +30,5 @@
 
         public virtual ICollection<BlogPostTag> BlogPostTags { get; set; }
 
-        public virtual ICollection<BlogPostImage> BlogPostImages { get; set; }
     }
 }
