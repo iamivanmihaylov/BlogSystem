@@ -26,6 +26,14 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<BlogPost> BlogPosts { get; set; }
+
+        public DbSet<BlogPostImage> BlogPostImages { get; set; }
+
+        public DbSet<BlogPostTag> BlogPostTags { get; set; }
+
+        public DbSet<BlogPostReaction> BlogPostReactions { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

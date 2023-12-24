@@ -16,7 +16,23 @@ namespace BlogSystem.Data.Models
             this.Roles = new HashSet<IdentityUserRole<string>>();
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
+            this.BlogPosts = new HashSet<BlogPost>();
         }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string ProfilePictureUrl { get; set; }
+
+        public string LinkedInProfileUrl { get; set; }
+
+        public string InstagramProfileUrl { get; set; }
+
+        public string FacebookProfileUrl { get; set; }
+
+        public string GithubProfileUrl { get; set; }
+
 
         // Audit info
         public DateTime CreatedOn { get; set; }
@@ -33,5 +49,7 @@ namespace BlogSystem.Data.Models
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
+
+        public virtual ICollection<BlogPost> BlogPosts { get; set; }
     }
 }
