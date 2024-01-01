@@ -1,0 +1,11 @@
+﻿@model BlogSystem.Web.ViewModels.ViewModels.ProjectVMs.AllProjectsInCategoryViewModel;
+
+<a asp-controller="Project" asp-action="Create" asp-route-id="@Model.Id">Create Project</a>
+
+@foreach(var project in Model.Porjects)
+{
+    <div>
+        <span>@project.Title</span>
+        <span>@project.Description</span>
+    </div>
+}

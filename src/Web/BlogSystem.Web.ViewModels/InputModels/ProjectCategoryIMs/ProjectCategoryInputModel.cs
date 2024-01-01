@@ -8,6 +8,7 @@ namespace BlogSystem.Web.ViewModels.InputModels.ProjectCategoryIMs
 {
     public class ProjectCategoryInputModel
     {
+
         public string Name { get; set; }
 
         public bool IsGithubIntegrated { get; set; }

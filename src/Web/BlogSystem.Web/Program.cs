@@ -75,6 +75,7 @@ namespace BlogSystem.Web
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IBlogPostService, BlogPostService>();
             services.AddTransient<IReactionService, ReactionService>();
+            services.AddTransient<IProjectService, ProjectService>();
         }
 
         private static void Configure(WebApplication app)

@@ -1,6 +1,19 @@
 ﻿@using BlogSystem.Common
+@model BlogSystem.Web.ViewModels.ViewModels.HomeVMs.AboutViewModel;
 @{
     this.ViewData["Title"] = "About Page";
 }
 
 <h1>About page</h1>
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    <div>
+        <a asp-controller="Catgory" asp-action="Create" class="btn btn-primary">Create Category</a>
+    </div>
+}
+
+@foreach (var category in Model.Categories)
+{
+    <a asp-controller="Catgory" asp-action="ById" asp-route-id="@category.Id">@category.Name</a>
+}
