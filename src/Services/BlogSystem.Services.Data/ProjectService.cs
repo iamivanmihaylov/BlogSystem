@@ -23,6 +23,20 @@ namespace BlogSystem.Services.Data
             this.projectsRepository = projectRepository;
         }
 
+        public async Task CreateProjectAsync(int categoryId, string title, string description, string content)
+        {
+            var project = new Project
+            {
+                Title = title,
+                Description = description,
+                Content = content,
+                ProjectCategoryId = categoryId,
+            };
+
+            await this.projectsRepository.AddAsync(project);
+            await this.projectsRepository.SaveChangesAsync();
+        }
+
         public async Task CreatProjectCategoryAsync(string userId, string name, bool isGithubIntegrated)
         {
             var projectCategory = new ProjectCategory

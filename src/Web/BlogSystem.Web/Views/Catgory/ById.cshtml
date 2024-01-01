@@ -5,7 +5,8 @@
 @foreach(var project in Model.Porjects)
 {
     <div>
-        <span>@project.Title</span>
-        <span>@project.Description</span>
+        <span>@project.Title</span> <br />
+        <span>@project.Description</span> <br />
+        <div>@Html.Raw(project.SanitizedContent)</div>
     </div>
 }
