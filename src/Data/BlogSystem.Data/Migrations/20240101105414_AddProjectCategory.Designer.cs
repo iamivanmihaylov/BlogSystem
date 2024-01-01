@@ -4,6 +4,7 @@ using BlogSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogSystem.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240101105414_AddProjectCategory")]
+    partial class AddProjectCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -295,6 +298,9 @@ namespace BlogSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
@@ -320,6 +326,8 @@ namespace BlogSystem.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("IsDeleted");
 
@@ -572,6 +580,10 @@ namespace BlogSystem.Data.Migrations
 
             modelBuilder.Entity("BlogSystem.Data.Models.Project", b =>
                 {
+                    b.HasOne("BlogSystem.Data.Models.ApplicationUser", null)
+                        .WithMany("Projects")
+                        .HasForeignKey("ApplicationUserId");
+
                     b.HasOne("BlogSystem.Data.Models.ProjectCategory", "ProjectCategory")
                         .WithMany("Projects")
                         .HasForeignKey("ProjectCategoryId")
@@ -584,7 +596,7 @@ namespace BlogSystem.Data.Migrations
             modelBuilder.Entity("BlogSystem.Data.Models.ProjectCategory", b =>
                 {
                     b.HasOne("BlogSystem.Data.Models.ApplicationUser", "User")
-                        .WithMany("ProjectsCategories")
+                        .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
@@ -649,7 +661,7 @@ namespace BlogSystem.Data.Migrations
 
                     b.Navigation("Logins");
 
-                    b.Navigation("ProjectsCategories");
+                    b.Navigation("Projects");
 
                     b.Navigation("Roles");
                 });

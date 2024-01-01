@@ -1,11 +1,28 @@
-﻿// ReSharper disable VirtualMemberCallInConstructor
-using BlogSystem.Data.Common.Models;
-
-namespace BlogSystem.Data.Models
+﻿namespace BlogSystem.Data.Models
 {
-    public enum ProjectCategory
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    using BlogSystem.Data.Common.Models;
+
+    public class ProjectCategory : BaseDeletableModel<int>
     {
-        Programming = 0,
-        Design = 1,
+        public ProjectCategory()
+        {
+            this.Projects = new HashSet<Project>();
+        }
+
+        public string Name { get; set; }
+
+        public bool IsGithubIntegrated { get; set; }
+
+        public ApplicationUser User { get; set; }
+
+        public string UserId { get; set; }
+
+        public ICollection<Project> Projects { get; set; }
     }
 }

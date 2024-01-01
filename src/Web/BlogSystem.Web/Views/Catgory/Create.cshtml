@@ -1,0 +1,23 @@
+﻿@model BlogSystem.Web.ViewModels.InputModels.ProjectCategoryIMs.ProjectCategoryInputModel;
+
+<form asp-controller="Catgory" , asp-action="Create" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <form asp-controller="BlogPost" asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Title...">
+            <span asp-validation-for="Name"></span>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" asp-for="IsGithubIntegrated">
+            <label class="form-check-label" asp-for="IsGithubIntegrated">Use Github</label>
+            <span asp-validation-for="IsGithubIntegrated"></span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</form>

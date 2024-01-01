@@ -9,12 +9,10 @@ namespace BlogSystem.Data.Models
 
         public string Description { get; set; }
 
-        public ProjectCategory Category { get; set; }
+        public ProjectCategory ProjectCategory { get; set; }
+
+        public int ProjectCategoryId { get; set; }
 
         public string Content { get; set; }
-
-        public ApplicationUser User { get; set; }
-
-        public string UserId { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace BlogSystem.Data.Models
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
             this.BlogPosts = new HashSet<BlogPost>();
-            this.Projects = new HashSet<Project>();
+            this.ProjectsCategories = new HashSet<ProjectCategory>();
         }
 
         public string FirstName { get; set; }
@@ -53,6 +53,6 @@ namespace BlogSystem.Data.Models
 
         public virtual ICollection<BlogPost> BlogPosts { get; set; }
 
-        public virtual ICollection<Project> Projects { get; set; }
+        public virtual ICollection<ProjectCategory> ProjectsCategories { get; set; }
     }
 }

@@ -34,6 +34,8 @@
 
         public DbSet<Project> Projects { get; set; }
 
+        public DbSet<ProjectCategory> ProjectCategories { get; set; }
+
         public DbSet<Subscribtion> Subscribtions { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
